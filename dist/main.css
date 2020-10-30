@@ -1,0 +1,103 @@
+.main {
+  width: 400px;
+  height: 400px;
+}
+
+
+.like-button {
+  display: block;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+.heart {
+  position: absolute;
+  font-size: 30px;
+  color: red;
+}
+
+.heart-left {
+  animation: left 1s linear forwards;
+}
+
+.heart-right {
+  animation: right 1s linear forwards;
+}
+
+.heart-center {
+  animation: center 1s linear forwards;
+}
+
+
+
+@keyframes left {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-50px, -50px);
+  }
+  50% {
+    transform: translate(50px, -100px);
+  }
+  75% {
+    opacity: 0.5;
+    transform: translate(-50px, -150px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(50px, -200px);
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(50px, -50px);
+  }
+  50% {
+    transform: translate(-50px, -100px);
+  }
+  75% {
+    opacity: 0.5;
+    transform: translate(50px, -150px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50px, -200px);
+  }
+}
+
+@keyframes center {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0px, -50px);
+  }
+  50% {
+    transform: translate(-50px, -100px);
+  }
+  75% {
+    opacity: 0.5;
+    transform: translate(50px, -150px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50px, -200px);
+  }
+}
+
+/*# sourceMappingURL=main.css.map*/
